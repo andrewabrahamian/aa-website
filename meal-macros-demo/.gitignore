@@ -1,0 +1,9 @@
+apps/web/node_modules
+apps/web/.next
+apps/api/.pytest_cache
+apps/api/app/data/app.db
+apps/api/.env
+apps/web/.env
+
+__pycache__
+*.pyc
