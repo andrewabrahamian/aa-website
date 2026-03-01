@@ -1,0 +1,23 @@
+services:
+  api:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ../apps/api:/app
+    command: bash -lc "pip install -r requirements.txt && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+    env_file:
+      - ../apps/api/.env
+    ports:
+      - "8000:8000"
+  web:
+    image: node:20
+    working_dir: /app
+    volumes:
+      - ../apps/web:/app
+    command: bash -lc "npm install && npm run dev"
+    env_file:
+      - ../apps/web/.env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api

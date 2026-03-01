@@ -1,0 +1,11 @@
+{
+  "description": "Scrambled eggs",
+  "foodNutrients": [
+    {"nutrient": {"name": "Energy"}, "amount": 148},
+    {"nutrient": {"name": "Protein"}, "amount": 10.0},
+    {"nutrient": {"name": "Carbohydrate, by difference"}, "amount": 1.6},
+    {"nutrient": {"name": "Total lipid (fat)"}, "amount": 10.9},
+    {"nutrient": {"name": "Sodium, Na"}, "amount": 140},
+    {"nutrient": {"name": "Vitamin C, total ascorbic acid"}, "amount": 0}
+  ]
+}
